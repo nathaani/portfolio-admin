@@ -1,0 +1,26 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Codeo Admin</title>
+  </head>
+  <body>
+    <form action="/note/confirm-update" method="POST">
+      <input
+        type="text"
+        placeholder="img"
+        name="img"
+        value="{{{img}}}"
+      />
+      <input
+        type="text"
+        placeholder="text"
+        name="text"
+        value="{{{text}}}"
+      />
+     
+      <input type="hidden" name="id" value="{{{_id}}}" />
+      <p>id: {{{_id}}}</p>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
